@@ -1,1 +1,14 @@
 /* ********************************* FOOTER ********************************* */
+.footer {
+  text-align: center;
+  padding: 2.5em;
+  font-size: 11px;
+  margin-top: 40px;
+  > a {
+    color: hsl(228, 45%, 44%);
+    letter-spacing: 0.068em;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
