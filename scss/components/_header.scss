@@ -1,0 +1,66 @@
+/* ********************************* HEADER ********************************* */
+.header {
+  @media #{$break-m} {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: initial;
+  }
+  text-align: center;
+  padding: 1em;
+  color: $darkMagenta;
+  &-intro {
+    @media #{$break-m} {
+      width: 75%;
+    }
+    > h1 {
+      font-size: 40px;
+      font-weight: 700;
+    }
+    > p {
+      margin: 10px 0 45px;
+      color: $darkGrayMagenta;
+      font-weight: 500;
+      opacity: 0.9;
+    }
+  }
+}
+
+.flex-container {
+  @media #{$break-l} {
+    @include flexy($a-items: null);
+  }
+}
+
+.flex-itemOne {
+  @include flexy($dsp: null, $f-dir: null, $a-items: null, $a-self: flex-start);
+}
+
+.flex-itemTwo {
+  @include flexy($dsp: null, $f-dir: null, $a-items: null, $a-self: center);
+}
+
+.flex-itemThree {
+  @include flexy($dsp: null, $f-dir: null, $a-items: null, $a-self: flex-end);
+}
+
+.card-review {
+  @media #{$break-l} {
+    @include flexy($f-dir: null);
+
+    p {
+      margin-left: 20px;
+    }
+  }
+  padding: 1em;
+  border-radius: 5px;
+  background-color: $lightGrayMagenta;
+  > img {
+    padding-bottom: 5px;
+  }
+  p {
+    font-weight: 700;
+  }
+  + .card-review {
+    margin-top: 15px;
+  }
+}

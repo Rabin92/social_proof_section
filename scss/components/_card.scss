@@ -1,0 +1,50 @@
+/* ****************************** CARD-SECTION ****************************** */
+.main {
+  @media #{$break-l} {
+    @include flexy($f-dir: null, $a-items: null);
+    height: 230px;
+    margin-top: 40px;
+  }
+}
+
+.card {
+  @media #{$break-l} {
+    + .card {
+      margin-left: 20px;
+    }
+  }
+  padding: 2em;
+  margin-top: 30px;
+  border-radius: 5px;
+  background-color: $darkMagenta;
+  &-flex {
+    @include flexy($f-dir: null, $a-items: null);
+  }
+  &-intro {
+    margin-left: 25px;
+    > h5 {
+      color: $white;
+    }
+    p {
+      color: $pink;
+      opacity: 0.6;
+      font-size: 0.8rem;
+    }
+  }
+  &-body {
+    margin-top: 30px;
+    > p {
+      color: $white;
+    }
+  }
+}
+
+.cardOne {
+  @include flexy($dsp: null, $f-dir: null, $a-items: null, $a-self: flex-end);
+}
+.cardTwo {
+  @include flexy($dsp: null, $f-dir: null, $a-items: null, $a-self: center);
+}
+.cardThree {
+  @include flexy($dsp: null, $f-dir: null, $a-items: null, $a-self: flex-start);
+}

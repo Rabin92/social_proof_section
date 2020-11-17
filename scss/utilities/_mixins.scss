@@ -1,0 +1,13 @@
+@mixin flexy(
+  $dsp: flex,
+  $f-dir: column,
+  $j-content: null,
+  $a-items: center,
+  $a-self: null
+) {
+  display: $dsp;
+  flex-direction: $f-dir;
+  justify-content: $j-content;
+  align-items: $a-items;
+  align-self: $a-self;
+}
