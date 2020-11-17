@@ -427,11 +427,35 @@ body {
   font-size: 40px;
   font-weight: 700;
 }
-.header-intro > p {
-  margin: 10px 0 45px;
+.header-intro p {
+  margin: 30px 0 45px;
   color: #937b92;
   font-weight: 500;
   opacity: 0.9;
+}
+
+.card-review {
+  padding: 1em;
+  border-radius: 5px;
+  background-color: #f7f2f7;
+}
+@media (min-width: 1024px) {
+  .card-review {
+    display: flex;
+    align-items: center;
+  }
+  .card-review p {
+    margin-left: 20px;
+  }
+}
+.card-review > img {
+  padding-bottom: 10px;
+}
+.card-review p {
+  font-weight: 700;
+}
+.card-review + .card-review {
+  margin-top: 15px;
 }
 
 @media (min-width: 1024px) {
@@ -451,30 +475,6 @@ body {
 
 .flex-itemThree {
   align-self: flex-end;
-}
-
-.card-review {
-  padding: 1em;
-  border-radius: 5px;
-  background-color: #f7f2f7;
-}
-@media (min-width: 1024px) {
-  .card-review {
-    display: flex;
-    align-items: center;
-  }
-  .card-review p {
-    margin-left: 20px;
-  }
-}
-.card-review > img {
-  padding-bottom: 5px;
-}
-.card-review p {
-  font-weight: 700;
-}
-.card-review + .card-review {
-  margin-top: 15px;
 }
 
 /* ****************************** CARD-SECTION ****************************** */
@@ -537,5 +537,18 @@ body {
 }
 
 /* ********************************* FOOTER ********************************* */
+.footer {
+  text-align: center;
+  padding: 2.5em;
+  font-size: 11px;
+  margin-top: 40px;
+}
+.footer > a {
+  color: #3e52a3;
+  letter-spacing: 0.068em;
+}
+.footer > a:hover {
+  text-decoration: underline;
+}
 
 /*# sourceMappingURL=styles.css.map */
